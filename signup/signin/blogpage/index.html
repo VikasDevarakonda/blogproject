@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="content" id="content">
+        <textarea disabled class="contents" style=" width: 1000px;height: 600px;" name="blog" id="contents" cols="50" rows="20"></textarea>
+    </div>
+        <button  id="save" > save document</button>
+
+        <button id="new">New file </button>
+
+        <button onclick="cleartext()"  id="delete">Delete </button>
+        
+<!--        
+        <textarea id="textarea"></textarea>
+
+        <button onclick="textarea.value = ''">Clear Text</button> -->
+
+        
+        
+        <button onclick="edit()" id="edit">Edit </button>
+
+    <script>
+
+       
+
+
+        function edit(){
+
+
+            document.getElementById("content").innerHTML="<textarea ></textarea>";
+            
+        
+        }
+
+        // console.log(document.getElementById("content"));
+        function cleartext(){
+        
+        var textarea = document.getElementById('content');
+
+// Set the value of the textarea to an empty string
+textarea.value = '';
+
+        }
+
+
+        // function deletetext()
+        // {
+        //     document.getElementById("contents").style.clear
+
+        // }
+        //     console.log(document.getElementById("contents"));
+
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>
